@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Ubuntu", sans-serif;
+	box-sizing: border-box;
+}
+
+body{
+	min-height: 10vh;
+	display: flex;
+	align-items: left;
+	justify-content: center;
+	background: white;
+
+}
+
+.Skills{
+	width: 100%;
+	max-width: 600px;
+	padding: 0 20px;
+}
+
+.skill-name{/*nom de compétence*/
+	font-size: 10px;/*taille du nom de compétence*/
+	font-weight: 700;/*éclairage du nom */
+	text-transform: uppercase;
+	margin: 25px 0;
+}
+
+.skill-bar{
+	height: 14px;
+	background: grey;/*barre progressive fond gris*/
+	border-radius: -3px;
+}
+
+.skill-per{/*barre progressive*/
+	height: 14px;
+	background: green;/*barre progressive couleur vert*/
+	border-radius: 3px;
+	position: relative;
+	animation: fillBars 2.5s 1;
+}
+
+.skill-per::before{
+	content: attr(per);
+	position: absolute;
+	padding: 4px 6px;
+	background: grey;/*bordure du pourcentage*/
+	border-radius: 4px;
+	font-size: 12px;/*taille du pourcentage*/
+	top: -35px;
+	right: 0;
+	transform: translateX(50%);
+}
+
+.skill-per::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: grey;/*indice du pourcentage*/
+    top: -15px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+
+@keyframes fillBars{
+	from{
+		width: 0;
+	}
+	to{
+		width: 100%;
+	}
+}

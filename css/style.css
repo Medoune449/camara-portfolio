@@ -58,7 +58,7 @@ header{
 }
 
 .sidenav a:hover {
-	color: blue;/*survol menu*/
+	color: green;/*survol menu*/
 	transform: translateY(-2px);
 }
 
@@ -86,7 +86,7 @@ header{
 	display: block;
 	width: 35px;
 	height: 5px;
-	background-color: blue;/*couleur icon-menu*/
+	background-color: green;/*couleur icon-menu*/
 	margin: 6px;/*marge menu-icon*/
 }
 
@@ -124,7 +124,7 @@ header{
 	margin: 20px 0;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	text-shadow: -1px -1px 0px #000, 7px 7px 0px #000, 9px 9px 0px #00000055;
+	text-shadow: -1px -1px 0px #1d1c1b, 7px 7px 0px #1d1c1b, 9px 9px 0px #1d1c1b;
 }
  /* prenom */
 .hero-text h1 span{
